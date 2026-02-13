@@ -86,7 +86,7 @@ function App() {
     <>
       <div className="container">
         <div className="content">
-        <h1 className="valentineTitle">HAPPY VALENTINE'S DAY DANICA💖</h1>
+        <h1 className="valentineTitle">HAPPY VALENTINE'S DAY, DANICAAA💖</h1>
           <h2>{question}</h2>
 
           {showButtons && (

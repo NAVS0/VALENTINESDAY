@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   const [name, setName] = useState("");
   const [noClickCount, setNoClickCount] = useState(0);
-  const [question, setQuestion] = useState("Ma food trip kita?");
+  const [question, setQuestion] = useState("Catch up? hangout?💕");
   const [message, setMessage] = useState("");
   const [gif, setGif] = useState("");
   const [showGif, setShowGif] = useState(false);
@@ -21,7 +21,7 @@ function App() {
     setNoClickCount(newCount);
 
     setShowGif(true);
-    setGif("https://giphy.com/embed/3ov9k9lURIV8NxMg7u");
+    setGif("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTlmd3Bubmo1MmZidTc2YTBwdGNhY3hhbm56cWFhOXRwdGhydXdhNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ov9k9lURIV8NxMg7u/giphy.gif");
 
     if (newCount === 1) {
       setYesSize(30);
@@ -66,7 +66,7 @@ function App() {
       return;
     }
 
-    setQuestion(`Let's gooooo 💖 ${name} said YES!`);
+    setQuestion(`Let's gooooo💖`);
     setMessage("");
     setShowGif(true);
     setGif("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjI3MjFrMjB3YnNmdTNtcnRuMmV5enhyZGw2cWF6ZnFpNHA4MXprbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/O0ZVylIJnfyehl1UzQ/giphy.gif");
@@ -86,6 +86,7 @@ function App() {
     <>
       <div className="container">
         <div className="content">
+        <h1 className="valentineTitle">HAPPY VALENTINE'S DAY 💖</h1>
           <h2>{question}</h2>
 
           {showButtons && (
@@ -93,7 +94,7 @@ function App() {
               {/* 💖 Name Input */}
               <input
                 type="text"
-                placeholder="Enter your name 💕"
+                placeholder="Message💕"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="nameInput"

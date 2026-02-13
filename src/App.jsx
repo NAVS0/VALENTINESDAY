@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   const [name, setName] = useState("");
   const [noClickCount, setNoClickCount] = useState(0);
-  const [question, setQuestion] = useState("Catch up? hangout?💕");
+  const [question, setQuestion] = useState("wanna hangout?💕");
   const [message, setMessage] = useState("");
   const [gif, setGif] = useState("");
   const [showGif, setShowGif] = useState(false);
@@ -86,7 +86,7 @@ function App() {
     <>
       <div className="container">
         <div className="content">
-        <h1 className="valentineTitle">HAPPY VALENTINE'S DAY 💖</h1>
+        <h1 className="valentineTitle">HAPPY VALENTINE'S DAY DANICA💖</h1>
           <h2>{question}</h2>
 
           {showButtons && (
